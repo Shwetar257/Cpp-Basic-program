@@ -3,13 +3,20 @@
 using namespace std;
 int main()
 {
-    int num,rev = 0,temp = 10,i;
-    cout<<"Enter the number\n";
-    cin>>num;
-    for(i = num;i > 0;i /= 10)
-        rev = (rev * temp) + (i % 10);
-    if(rev == num)
-        cout<<"The number is palindrome\n";
-    else
-        cout<<"The number is not palindrome\n";
-}
+    {  
+  int n,r,sum=0,temp;    
+  cout<<"Enter the Number=";    
+  cin>>n;    
+ temp=n;    
+ while(n>0)    
+{    
+ r=n%10;    
+ sum=(sum*10)+r;    
+ n=n/10;    
+}    
+if(temp==sum)    
+cout<<"Number is Palindrome.";    
+else    
+cout<<"Number is not Palindrome.";   
+  return 0;  
+}  
